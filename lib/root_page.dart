@@ -16,7 +16,7 @@ class _RootPageState extends State<RootPage> {
 
   @override
   Widget build(BuildContext context) {
-//    _carregarUsuario();
+    _carregarUsuario();
 
     return Scaffold(
       backgroundColor: Colors.white,
