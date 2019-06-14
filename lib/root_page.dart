@@ -30,14 +30,11 @@ class _RootPageState extends State<RootPage> {
               const SizedBox(
                 height: 30.0,
               ),
-              Image.asset(
-                "assets/images/logo.png",
-                width: 400,
-                height: 400,
-                fit: BoxFit.contain,
+              FlutterLogo(
+                size: 250.0,
               ),
               const SizedBox(
-                height: 15.0,
+                height: 150.0,
               ),
               CircularProgressIndicator(
                   valueColor: new AlwaysStoppedAnimation<Color>(Colors.black)),
