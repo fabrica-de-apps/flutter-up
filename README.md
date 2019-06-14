@@ -1,4 +1,4 @@
-# flutter_up
+# Flutter Up!
 
 Projetct for flutter devs
 
