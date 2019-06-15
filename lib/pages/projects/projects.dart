@@ -32,12 +32,6 @@ class _ProjectsState extends State<Projects> {
           width: size.width,
           height: size.height,
           color: Colors.grey[400],
-//          decoration: BoxDecoration(
-//              image: DecorationImage(
-//                image: AssetImage("assets/images/fundo.jpg"),
-//                fit: BoxFit.cover,
-//              )
-//          ),
           padding: const EdgeInsets.all(8.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +40,7 @@ class _ProjectsState extends State<Projects> {
                 "Recent projects",
                 style: TextStyle(
                   fontSize: 12.0,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w700,
                     color: Colors.white,
                   fontStyle: FontStyle.italic
                 ),
@@ -73,7 +67,7 @@ class _ProjectsState extends State<Projects> {
                 style: TextStyle(
                     fontSize: 12.0,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w700,
                     fontStyle: FontStyle.italic
                 ),
               ),
