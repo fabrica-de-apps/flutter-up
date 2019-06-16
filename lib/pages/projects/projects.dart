@@ -34,7 +34,7 @@ class _ProjectsState extends State<Projects> {
           color: Colors.grey[400],
 //          decoration: BoxDecoration(
 //              image: DecorationImage(
-//                image: AssetImage("assets/images/fundo.jpg"),
+//                image: AssetImage("assets/images/fundo_login.jpg"),
 //                fit: BoxFit.cover,
 //              )
 //          ),
