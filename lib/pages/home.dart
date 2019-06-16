@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
                               shape: BoxShape.circle,
                               image: new DecorationImage(
                                   fit: BoxFit.cover,
-                                  image: AssetImage("assets/flutter-icon-jpeg.jpg")
+                                  image: AssetImage("assets/images/image_user_default.png")
                                 //AssetImage("assets/flutter-icon-jpeg.jpg")
                               )
                           )
