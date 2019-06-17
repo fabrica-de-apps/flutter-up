@@ -25,6 +25,6 @@ class MyApp extends StatelessWidget {
           '/register/password_recovery': (BuildContext context) =>
               PasswordRecovery(),
           '/home': (BuildContext context) => Home(),
-        });
+        },);
   }
 }
