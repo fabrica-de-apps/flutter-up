@@ -37,32 +37,25 @@ class _DriverRateState extends State<DriverRate> {
 
   @override
   Widget build(BuildContext context) {
-
+    Size size = MediaQuery.of(context).size;
     TextEditingController _descriptionController;
 
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
-          "Rate the project",
+          "Vote",
           style: TextStyle(fontSize: 16.0, color: Colors.white),
         ),
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.all(10.0),
-        child: Container(
-          width: double.infinity,
+      body: Container(
+        height: size.height,
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SizedBox(
-                height: 40.0,
-              ),
-              SizedBox(
-                height: 40.0,
-              ),
               Padding(
                 padding: const EdgeInsets.only(left: 60.0, right: 60.0),
                 child: Row(
