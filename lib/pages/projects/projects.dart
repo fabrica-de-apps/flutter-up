@@ -10,11 +10,13 @@ class Projects extends StatefulWidget {
 class _ProjectsState extends State<Projects> {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
-          "My Projects - UI/UX",
+          "My Projects",
           style: TextStyle(fontSize: 18.0),
         ),
         centerTitle: true,
@@ -25,37 +27,73 @@ class _ProjectsState extends State<Projects> {
           )
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              "Recent projects",
-              style: TextStyle(
-                fontSize: 12.0,
-                color: Colors.grey[700],
-                fontStyle: FontStyle.italic
-              ),
-            ),
-            SizedBox(height: 5.0,),
-            RecentProjectsTile(),
-            SizedBox(height: 5.0,),
-            RecentProjectsTile(),
-            Divider(),
-            Text(
-              "Last projects",
-              style: TextStyle(
+      body: SingleChildScrollView(
+        child: Container(
+          width: size.width,
+          height: size.height,
+          color: Colors.grey[400],
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                "Recent projects",
+                style: TextStyle(
                   fontSize: 12.0,
-                  color: Colors.grey[700],
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
                   fontStyle: FontStyle.italic
+                ),
               ),
-            ),
-            SizedBox(height: 5.0,),
-            LastProjectsTile(),
-            SizedBox(height: 5.0,),
-            LastProjectsTile(),
-          ],
+              SizedBox(height: 5.0,),
+              RecentProjectsTile({
+                "rating": "5.0",
+                "projectName": "Hummingbird Test",
+                "projectCategory": "Code Quality",
+                "remainingTime": "23h",
+                "numberVotes": "26"
+              }),
+              SizedBox(height: 5.0,),
+              RecentProjectsTile({
+                "rating": "4.7",
+                "projectName": "Carry coins!",
+                "projectCategory": "Perfomance",
+                "remainingTime": "11h",
+                "numberVotes": "104"
+              }),
+              Divider(color: Colors.grey[300],),
+              Text(
+                "Last projects",
+                style: TextStyle(
+                    fontSize: 12.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.italic
+                ),
+              ),
+              SizedBox(height: 5.0,),
+              LastProjectsTile({
+                "rating": "4.9",
+                "projectName": "GPOL - Gestão Política Online",
+                "projectCategory": "Security",
+                "numberVotes": "453"
+              }),
+              SizedBox(height: 5.0,),
+              LastProjectsTile({
+                "rating": "4.1",
+                "projectName": "Anime animations",
+                "projectCategory": "UI/UX",
+                "numberVotes": "259"
+              }),
+              SizedBox(height: 5.0,),
+              LastProjectsTile({
+                "rating": "2.3",
+                "projectName": "This is my city",
+                "projectCategory": "UI/UX",
+                "numberVotes": "198"
+              }),
+            ],
+          ),
         ),
       ),
     );
