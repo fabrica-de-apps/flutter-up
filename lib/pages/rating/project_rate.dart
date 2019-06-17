@@ -68,7 +68,8 @@ class _DriverRateState extends State<DriverRate> {
                 padding: const EdgeInsets.only(left: 60.0, right: 60.0, bottom: 30.0),
                 child: Column(
                   children: <Widget>[
-                    Text("GPOL - Gestão Política", style: TextStyle(fontSize: 27.0, ),),
+                    Text("Hummingbird Test",
+                      style: TextStyle(fontSize: 27.0, fontWeight: FontWeight.w700),),
                     Padding(
                       padding: const EdgeInsets.only(top: 20.0),
                       child: Row(
