@@ -46,7 +46,7 @@ class _ProjectsState extends State<Projects> {
                 "Recent projects",
                 style: TextStyle(
                   fontSize: 12.0,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w700,
                     color: Colors.white,
                   fontStyle: FontStyle.italic
                 ),
@@ -73,7 +73,7 @@ class _ProjectsState extends State<Projects> {
                 style: TextStyle(
                     fontSize: 12.0,
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w700,
                     fontStyle: FontStyle.italic
                 ),
               ),
