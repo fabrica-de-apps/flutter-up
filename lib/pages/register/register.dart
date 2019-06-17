@@ -73,56 +73,9 @@ class _RegisterState extends State<Register> {
                     height: 5.0,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(
-                        labelText: "Confirm Email",
-                        hintStyle: TextStyle(
-                          decorationColor: Colors.black,
-                          color: Colors.black,
-                        )),
-                    textAlign: TextAlign.start,
-                    keyboardType: TextInputType.emailAddress,
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.black,
-                    ),
-                    maxLines: 1,
-                    maxLength: 30,
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const SizedBox(
-                    height: 5.0,
-                  ),
-                  TextFormField(
                     obscureText: true,
                     decoration: InputDecoration(
                         labelText: "Password",
-                        hintStyle: TextStyle(
-                          decorationColor: Colors.black,
-                          color: Colors.black,
-                        )),
-                    textAlign: TextAlign.start,
-                    keyboardType: TextInputType.text,
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.black,
-                    ),
-                    maxLines: 1,
-                    maxLength: 20,
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  const SizedBox(
-                    height: 5.0,
-                  ),
-                  TextFormField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                        labelText: "Confirm Password",
                         hintStyle: TextStyle(
                           decorationColor: Colors.black,
                           color: Colors.black,
@@ -210,10 +163,5 @@ class _RegisterState extends State<Register> {
             ],
           ),
         ));
-  }
-
-  String convertsFirstLetterToUppercase(String name) {
-    String firstLetter = name.substring(0, 1).toUpperCase();
-    return firstLetter + name.substring(1, name.length);
   }
 }

@@ -32,6 +32,12 @@ class _ProjectsState extends State<Projects> {
           width: size.width,
           height: size.height,
           color: Colors.grey[400],
+//          decoration: BoxDecoration(
+//              image: DecorationImage(
+//                image: AssetImage("assets/images/fundo_login.jpg"),
+//                fit: BoxFit.cover,
+//              )
+//          ),
           padding: const EdgeInsets.all(8.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

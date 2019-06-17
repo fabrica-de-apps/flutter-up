@@ -87,18 +87,18 @@ class _HomeState extends State<Home> {
                             fontWeight: FontWeight.w700,
                             color: Colors.grey[800]),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5.0,
-                    ),
-                    Opacity(
-                      opacity: 0.8,
-                      child: Text(
-                        "joao_camargo10@hotmail.com",
-                        style: TextStyle(
-                            fontSize: 13.0,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.grey[600]),
+                      Container(
+                          width: 100.0,
+                          height: 100.0,
+                          decoration: new BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: new DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage("assets/images/image_user_default.png")
+                                //AssetImage("assets/flutter-icon-jpeg.jpg")
+                              )
+                          )
+
                       ),
                     ),
                     SizedBox(
