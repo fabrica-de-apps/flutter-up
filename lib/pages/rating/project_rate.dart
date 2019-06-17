@@ -51,59 +51,79 @@ class _DriverRateState extends State<DriverRate> {
       ),
       body: Container(
         height: size.height,
+        decoration: BoxDecoration(
+            color: Colors.grey[400],
+            image: DecorationImage(
+              image: AssetImage("assets/images/fundo_login.jpg"),
+              fit: BoxFit.cover,
+            )
+        ),
+
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 60.0, right: 60.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                padding: const EdgeInsets.only(left: 60.0, right: 60.0, bottom: 30.0),
+                child: Column(
                   children: <Widget>[
-                    GestureDetector(
-                      child: _firstStar,
-                      onTap: () {
-                        _firstStarPressed();
-                      },
-                    ),
-                    GestureDetector(
-                      child: _secondStar,
-                      onTap: () {
-                        _secondStarPressed();
-                      },
-                    ),
-                    GestureDetector(
-                      child: _thirdStar,
-                      onTap: () {
-                        _thirdStarPressed();
-                      },
-                    ),
-                    GestureDetector(
-                      child: _fourthStar,
-                      onTap: () {
-                        _fourthStarPressed();
-                      },
-                    ),
-                    GestureDetector(
-                      child: _fifthStar,
-                      onTap: () {
-                        _fifthStarPressed();
-                      },
+                    Text("GPOL - Gestão Política", style: TextStyle(fontSize: 27.0, ),),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          GestureDetector(
+                            child: _firstStar,
+                            onTap: () {
+                              _firstStarPressed();
+                            },
+                          ),
+                          GestureDetector(
+                            child: _secondStar,
+                            onTap: () {
+                              _secondStarPressed();
+                            },
+                          ),
+                          GestureDetector(
+                            child: _thirdStar,
+                            onTap: () {
+                              _thirdStarPressed();
+                            },
+                          ),
+                          GestureDetector(
+                            child: _fourthStar,
+                            onTap: () {
+                              _fourthStarPressed();
+                            },
+                          ),
+                          GestureDetector(
+                            child: _fifthStar,
+                            onTap: () {
+                              _fifthStarPressed();
+                            },
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
               ),
+//              Padding(
+//                padding: const EdgeInsets.only(left: 60.0, right: 60.0),
+//              ),
               Padding(
-                padding: EdgeInsets.only(top: 20.0),
+                padding: EdgeInsets.only(bottom: 10.0),
                 child: Textbox(
                     label: "Description",
                     controller: _descriptionController,
                     callback: (){},
+                    inputType: TextInputType.multiline,
                 ),
               ),
               Padding(
-                  padding: EdgeInsets.only(top: 10.0),
+                  padding: EdgeInsets.only(top: 30.0),
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).pushReplacement(
