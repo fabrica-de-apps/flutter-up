@@ -26,9 +26,9 @@ class _HomeState extends State<Home> {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                image: AssetImage("assets/images/fundo.jpg"),
-                fit: BoxFit.cover,
-              )),
+                    image: AssetImage("assets/images/fundo.jpg"),
+                    fit: BoxFit.cover,
+                  )),
             ),
             Positioned(
               top: 80.0,
@@ -61,8 +61,8 @@ class _HomeState extends State<Home> {
                       image: new DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage("assets/images/joao.jpg")
-                          //AssetImage("assets/flutter-icon-jpeg.jpg")
-                          ),
+                        //AssetImage("assets/flutter-icon-jpeg.jpg")
+                      ),
                       boxShadow: [
                         BoxShadow(
                             color: Colors.grey[600],
@@ -87,18 +87,18 @@ class _HomeState extends State<Home> {
                             fontWeight: FontWeight.w700,
                             color: Colors.grey[800]),
                       ),
-                      Container(
-                          width: 100.0,
-                          height: 100.0,
-                          decoration: new BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: new DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage("assets/images/image_user_default.png")
-                                //AssetImage("assets/flutter-icon-jpeg.jpg")
-                              )
-                          )
-
+                    ),
+                    SizedBox(
+                      height: 5.0,
+                    ),
+                    Opacity(
+                      opacity: 0.8,
+                      child: Text(
+                        "joao_camargo10@hotmail.com",
+                        style: TextStyle(
+                            fontSize: 13.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey[600]),
                       ),
                     ),
                     SizedBox(
@@ -146,12 +146,12 @@ class _HomeState extends State<Home> {
               child: Container(
                 child: Center(
                     child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    _buildCategories("Code Quality", "4.66"),
-                    _buildCategories("UI/UX", "4.98"),
-                  ],
-                )),
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        _buildCategories("Code Quality", "4.66"),
+                        _buildCategories("UI/UX", "4.98"),
+                      ],
+                    )),
               ),
             ),
             Positioned(
@@ -161,12 +161,12 @@ class _HomeState extends State<Home> {
               child: Container(
                 child: Center(
                     child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    _buildCategories("Performance", "4.01"),
-                    _buildCategories("Security", "3.11"),
-                  ],
-                )),
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        _buildCategories("Performance", "4.01"),
+                        _buildCategories("Security", "3.11"),
+                      ],
+                    )),
               ),
             )
           ],
