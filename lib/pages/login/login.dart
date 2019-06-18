@@ -14,6 +14,7 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
           Padding(
             padding: EdgeInsets.only(top: 70, bottom: 20),
             child: FlutterLogo(
+              colors: Colors.grey,
               size: 160.0,
             ),
           ),
@@ -39,6 +40,7 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
                 border: InputBorder.none,
                 hintText: "Email",
                 hintStyle: const TextStyle(
+                  fontWeight: FontWeight.w600,
                   color: Colors.black,
                   fontSize: 15,
                 ),
@@ -73,6 +75,7 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
                 border: InputBorder.none,
                 hintText: "Password",
                 hintStyle: const TextStyle(
+                  fontWeight: FontWeight.w600,
                   color: Colors.black,
                   fontSize: 15,
                 ),
@@ -120,12 +123,14 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
             textAlign: TextAlign.center,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w500,
                 color: Colors.black,
                 fontSize: 13,
                 letterSpacing: 0.5),
           ),
-          SizedBox(width: 5.0,),
+          SizedBox(
+            width: 5.0,
+          ),
           GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, "/register/register");
@@ -146,7 +151,7 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
     );
   }
 
-  Widget loginButton(){
+  Widget loginButton() {
     return Container(
       padding: EdgeInsets.only(top: 40.0),
       child: ButtonTheme(
@@ -178,13 +183,14 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
       body: SingleChildScrollView(
         child: Container(
           width: size.width,
-            height: size.height,
+          height: size.height,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/images/fundo.jpg"),
-                  fit: BoxFit.cover,
-              )
-          ),
+            colorFilter: new ColorFilter.mode(
+                Colors.white.withOpacity(0.1), BlendMode.luminosity),
+            image: AssetImage("assets/images/fundo_login.jpg"),
+            fit: BoxFit.cover,
+          )),
           child: Column(
             children: <Widget>[
               formContainer(),
